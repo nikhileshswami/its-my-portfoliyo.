@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhilesh Swami — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">NS</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#about" onclick="closeMobileNav()">About</a>
+    <a href="#skills" onclick="closeMobileNav()">Skills</a>
+    <a href="#projects" onclick="closeMobileNav()">Projects</a>
+    <a href="#services" onclick="closeMobileNav()">Services</a>
+    <a href="#contact" onclick="closeMobileNav()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-orb orb1"></div>
+    <div class="hero-bg-orb orb2"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-tag fade-up">
+            <span class="hero-tag-dot"></span>
+            Available for Freelance Work
+          </div>
+          <h1 class="hero-name fade-up fade-up-delay-1">Nikhilesh<br><span>Swami</span></h1>
+          <p class="hero-tagline fade-up fade-up-delay-2">
+            <strong>Full Stack Developer</strong> · Video Editor · Designer · SSC Educator · Freelancer
+          </p>
+          <p class="hero-intro fade-up fade-up-delay-3">
+            Crafting powerful digital experiences — from full-stack web apps and cinematic edits to beautiful designs
+            and impactful education. One creator, infinite possibilities.
+          </p>
+          <div class="hero-btns fade-up fade-up-delay-4">
+            <a href="#contact" class="btn btn-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+              Hire Me
+            </a>
+            <a href="resume.pdf" class="btn btn-outline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7,10 12,15 17,10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download Resume
+            </a>
+          </div>
+          <div class="stats-bar fade-up">
+            <div class="stat-item">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">40+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+            <!-- <div class="stat-item">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Skill Domains</span>
+          </div> -->
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrap fade-up fade-up-delay-2">
+          <div class="hero-image-frame">
+            <div class="profile-placeholder">
+              <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+              <div class="profile-avatar-ring">
+                <div class="profile-avatar-inner">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+              </div>
+              <div class="profile-name-tag">Nikhilesh Swami</div>
+              <div class="profile-title-tag">Full Stack Developer &amp; Creative</div>
+            </div>
+          </div>
+          <div class="hero-badge badge-top">
+            <div class="hero-badge-icon" style="background:rgba(79,142,255,0.15);">💻</div>
+            <div>
+              <div style="font-size:0.72rem;color:var(--muted);">Expertise</div>
+              <div style="font-size:0.82rem;">Full Stack Dev</div>
+            </div>
+          </div>
+          <div class="hero-badge badge-bottom">
+            <div class="hero-badge-icon" style="background:rgba(124,92,252,0.15);">🎬</div>
+            <div>
+              <div style="font-size:0.72rem;color:var(--muted);">Also does</div>
+              <div style="font-size:0.82rem;">Video Editing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual fade-up">
+          <div class="about-card">
+            <div class="section-label">Who I Am</div>
+            <div class="about-traits">
+              <div class="trait-row">
+                <div class="trait-icon">💻</div>
+                <p class="trait-text"><strong>Full Stack Developer</strong> — building scalable web apps with modern
+                  tech stacks</p>
+              </div>
+              <div class="trait-row">
+                <div class="trait-icon">🎬</div>
+                <p class="trait-text"><strong>Video Editor</strong> — cinematic reels, YouTube content &amp; motion
+                  graphics</p>
+              </div>
+              <div class="trait-row">
+                <div class="trait-icon">🎨</div>
+                <p class="trait-text"><strong>UI/UX Designer</strong> — crafting pixel-perfect, user-centric interfaces
+                </p>
+              </div>
+              <div class="trait-row">
+                <div class="trait-icon">📚</div>
+                <p class="trait-text"><strong>SSC Educator</strong> — mentoring students toward government exam success
+                </p>
+              </div>
+              <div class="trait-row">
+                <div class="trait-icon">🚀</div>
+                <p class="trait-text"><strong>Freelancer</strong> — delivering quality work across global clients</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-float-card">
+            <span style="font-size:20px;">⚡</span>
+            <div>
+              <div style="font-weight:600;font-size:0.9rem;">Multi-Domain Creator</div>
+              <div style="color:var(--muted);font-size:0.78rem;">Code · Edit · Design · Teach</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text fade-up fade-up-delay-1">
+          <div class="section-label">About Me</div>
+          <h2>A Digital Creator<br>Wearing Many Hats</h2>
+          <p>
+            I'm <span class="highlight">Nikhilesh Swami</span>, a passionate multi-skilled professional from India. I
+            combine technical precision with creative vision to deliver exceptional results across web development,
+            video production, graphic design, and education.
+          </p>
+          <p>
+            With hands-on experience in building full-stack applications using the MERN stack, crafting viral video
+            content, designing compelling brand identities, and mentoring SSC aspirants — I bring a <span
+              class="highlight">360° perspective</span> to every project I take on.
+          </p>
+          <p>
+            Whether you need a sleek web application, a cinematic brand video, a stunning design system, or a dedicated
+            educator — I deliver with commitment, quality, and creativity.
+          </p>
+          <a href="#contact" class="btn btn-primary" style="display:inline-flex;">
+            Let's Work Together
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <div class="section-label fade-up">What I Know</div>
+      <h2 class="fade-up" style="margin-bottom:36px;">Skills &amp; Expertise</h2>
+
+      <div class="skills-tabs fade-up">
+        <button class="tab-btn active" onclick="switchTab(this,'dev')">Development</button>
+        <button class="tab-btn" onclick="switchTab(this,'design')">Design</button>
+        <button class="tab-btn" onclick="switchTab(this,'video')">Video Editing</button>
+        <button class="tab-btn" onclick="switchTab(this,'other')">Other Skills</button>
+      </div>
+
+      <div class="skills-panel active" id="panel-dev">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">HTML & CSS</span><span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="95"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">JavaScript</span><span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="88"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">React.js</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Node.js</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="82"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Express.js</span><span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="80"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">MongoDB</span><span class="skill-pct">78%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="78"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">REST APIs</span><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Git & GitHub</span><span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel" id="panel-design">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">UI/UX Design</span><span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="88"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Figma</span><span class="skill-pct">85%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Adobe Photoshop</span><span
+                class="skill-pct">80%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="80"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Canva</span><span class="skill-pct">92%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="92"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Branding</span><span class="skill-pct">82%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="82"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel" id="panel-video">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Adobe Premiere Pro</span><span
+                class="skill-pct">90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="90"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">After Effects</span><span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="78"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">CapCut</span><span class="skill-pct">94%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="94"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Reels Editing</span><span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="92"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Motion Graphics</span><span
+                class="skill-pct">75%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel" id="panel-other">
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">SSC Exam Teaching</span><span
+                class="skill-pct">90%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="90"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Content Creation</span><span
+                class="skill-pct">88%</span></div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="88"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Freelancing</span><span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="85"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-card-top"><span class="skill-name">Communication</span><span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-fill" data-pct="92"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-pad">
+    <div class="container">
+      <div class="section-label fade-up">My Work</div>
+      <h2 class="fade-up" style="margin-bottom:40px;">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card fade-up">
+          <div class="project-thumb">
+            <div class="project-thumb-inner thumb-1" style="font-size:3rem;">🛒</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <h3>Anime E-Commerce Website</h3>
+            <p>A fully functional e-commerce platform for anime merchandise, featuring user auth, product catalog, cart
+              system, payment integration, and an admin dashboard for inventory management.</p>
+            <button class="project-link" onclick="window.open('https://github.com/nikhileshswami/project-repo')">
+              View Project (Github)
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card fade-up fade-up-delay-1">
+          <div class="project-thumb">
+            <div class="project-thumb-inner thumb-2" style="font-size:3rem;">💼</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Responsive</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <p>A premium, animated personal portfolio showcasing projects, skills, and services. Built with performance
+              in mind, featuring smooth scroll animations, glassmorphism UI, and full mobile responsiveness.</p>
+            <button class="project-link" onclick="window.open('https://github.com/nikhileshswami/project-repo')">
+              View Project (Github)
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card fade-up fade-up-delay-2">
+          <div class="project-thumb">
+            <div class="project-thumb-inner thumb-3" style="font-size:3rem;">🎬</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Premiere Pro</span>
+              <span class="project-tag">After Effects</span>
+              <span class="project-tag">CapCut</span>
+            </div>
+            <h3>Video Editing Showcase</h3>
+            <p>A curated reel of cinematic video edits including Instagram reels, YouTube content, brand promos, and
+              motion graphic pieces. Demonstrates transitions, color grading, and storytelling through visuals.</p>
+            <button class="project-link"
+              onclick="window.open('https://www.youtube.com/watch?v=YOUR_VIDEO_ID', '_blank')">
+
+               ▶ Watch Video
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="project-card fade-up fade-up-delay-3">
+          <div class="project-thumb">
+            <div class="project-thumb-inner thumb-4" style="font-size:3rem;">📖</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Guidance</span>
+              <span class="project-tag">Education</span>
+              <span class="project-tag">Strategies</span>
+            </div>
+            <h3>SSC Education Platform</h3>
+            <p>An online learning management system designed for SSC exam preparation. Includes video lectures, mock
+              tests, progress tracking, study material downloads, and a discussion forum for students.</p>
+            <button class="project-link" onclick="window.open('https:// ')">
+
+              View Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section-pad">
+    <div class="container">
+      <div class="section-label fade-up">What I Offer</div>
+      <h2 class="fade-up" style="margin-bottom:40px;">Services</h2>
+      <div class="services-grid">
+
+        <div class="service-card fade-up">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h3>Web Development</h3>
+          <p>Full-stack web applications built with React, Node.js, and MongoDB. Scalable, secure, and optimized for
+            performance and SEO.</p>
+        </div>
+
+        <div class="service-card fade-up fade-up-delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="1.8">
+              <path
+                d="M15 10l4.553-2.069A1 1 0 0 1 21 8.845v6.31a1 1 0 0 1-1.447.914L15 14M3 8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8z" />
+            </svg>
+          </div>
+          <h3>Video Editing</h3>
+          <p>Cinematic video edits, brand promos, Instagram reels, and YouTube videos with professional color grading
+            and motion graphics.</p>
+        </div>
+
+        <div class="service-card fade-up fade-up-delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.8">
+              <circle cx="12" cy="12" r="10" />
+              <circle cx="12" cy="12" r="4" />
+              <line x1="21.17" y1="8" x2="12" y2="8" />
+              <line x1="3.95" y1="6.06" x2="8.54" y2="14" />
+              <line x1="10.88" y1="21.94" x2="15.46" y2="14" />
+            </svg>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Brand identity, logo design, social media graphics, UI/UX mockups, and print-ready designs using Figma,
+            Photoshop, and Canva.</p>
+        </div>
+
+        <div class="service-card fade-up fade-up-delay-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="1.8">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+            </svg>
+          </div>
+          <h3>SSC Mentorship</h3>
+          <p>Personalized coaching for SSC CGL, CHSL &amp; other government exams. Covering Quant, Reasoning, English,
+            and GA with proven strategies.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="section-pad">
+    <div class="container">
+      <div class="section-label fade-up">Get In Touch</div>
+      <div class="contact-grid">
+        <div class="contact-info fade-up">
+          <h2>Let's Build<br>Something Great</h2>
+          <p>Whether you have a project in mind, need a freelancer, or just want to connect — my inbox is always open.
+            I'll get back to you within 24 hours.</p>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <span class="social-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </span>
+              LinkedIn — Nikhilesh Swami
+            </a>
+            <a href="https://github.com/nikhileshswami " class="social-link">
+              <span class="social-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--text)" stroke-width="1.8">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+              </span>
+              GitHub — @nikhileshswami
+            </a>
+            <a href="https://instagram.com/nikhilesh_swami" class="social-link">
+              <span class="social-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#e1306c" stroke-width="1.8">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </span>
+              Instagram — @nikhilesh_swami
+            </a>
+            <a href="mailto:nikhileshswami123@gmail.com" target="_blank" class="social-link">
+              <span class="social-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#22d3a0" stroke-width="1.8">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </span>
+              nikhileshswami123@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form fade-up fade-up-delay-1">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="fname" placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="femail" placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea id="fmessage" placeholder="Tell me about your project…"></textarea>
+          </div>
+          <button class="form-submit" onclick="handleForm()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✓ Message sent! I'll get back to you soon.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-logo">Nikhilesh Swami</span>
+    <span class="footer-copy">© 2025 Nikhilesh Swami. All rights reserved.</span>
+    <div style="display:flex;gap:12px;">
+      <a href="#hero" style="color:var(--muted);text-decoration:none;font-size:0.85rem;transition:color 0.2s;"
+        onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--muted)'">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
